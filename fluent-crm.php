@@ -1,12 +1,12 @@
 <?php defined('ABSPATH') or die;
 
 /**
- * Plugin Name:  FluentCRM - Marketing Automation For WordPress
- * Plugin URI:   https://fluentcrm.com
+ * Plugin Name:  TitleKit CRM
+ * Plugin URI:   https://thetitlekit.com
  * Description:  CRM and Email Newsletter Plugin for WordPress
  * Version:      2.9.84
- * Author:       WP Email Newsletter Team - FluentCRM
- * Author URI:   https://fluentcrm.com
+ * Author:       TitleKit by TitleKit
+ * Author URI:   https://thetitlekit.com
  * License:      GPLv2 or later
  * License URI:  https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:  fluent-crm
@@ -46,22 +46,3 @@ add_filter('site_transient_update_plugins', function ($transient) {
     return $transient;
 });
 
-add_filter('plugin_row_meta', 'fluentcrm_plugin_row_meta', 10, 2);
-
-function fluentcrm_plugin_row_meta($links, $file)
-{
-    if ('fluent-crm/fluent-crm.php' == $file) {
-        $row_meta = array(
-            'docs'           => '<a rel="noopener" href="https://fluentcrm.com/docs/" style="color: #23c507;font-weight: 600;" aria-label="' . esc_attr(esc_html__('View FluentCRM Documentation', 'fluent-crm')) . '" target="_blank">' . esc_html__('Docs & FAQs', 'fluent-crm') . '</a>',
-            'support'        => '<a rel="noopener" href="https://wpmanageninja.com/support-tickets/#/" style="color: #23c507;font-weight: 600;" aria-label="' . esc_attr(esc_html__('Get Support', 'fluent-crm')) . '" target="_blank">' . esc_html__('Support', 'fluent-crm') . '</a>',
-            'developer_docs' => '<a rel="noopener" href="https://developers.fluentcrm.com" style="color: #23c507;font-weight: 600;" aria-label="' . esc_attr(esc_html__('Developer Docs', 'fluent-crm')) . '" target="_blank">' . esc_html__('Developer Docs', 'fluent-crm') . '</a>',
-        );
-
-        if (!defined('FLUENTCAMPAIGN')) {
-            $row_meta['pro'] = '<a rel="noopener" href="https://fluentcrm.com" style="color: #7742e6;font-weight: bold;" aria-label="' . esc_attr(esc_html__('Upgrade to Pro', 'fluent-crm')) . '" target="_blank">' . esc_html__('Upgrade to Pro', 'fluent-crm') . '</a>';
-        }
-        return array_merge($links, $row_meta);
-    }
-
-    return (array)$links;
-}
