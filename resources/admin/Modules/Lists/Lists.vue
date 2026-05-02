@@ -420,7 +420,7 @@ export default {
 
             // Set link properties
             link.setAttribute('href', url);
-            link.setAttribute('download', 'fluent-crm-lists-export-' + new Date().toISOString().slice(0, 19).replace(/[T:.]/g, '-') + '.csv');
+            link.setAttribute('download', 'titlekit-lists-export-' + new Date().toISOString().slice(0, 19).replace(/[T:.]/g, '-') + '.csv');
             link.style.visibility = 'hidden';
 
             // Add to document, trigger click and remove
