@@ -1,5 +1,5 @@
 <template>
-    <div class="fc_promo_body">
+    <div class="fc_promo_body tk_brand_promo">
         <div class="promo_block">
             <el-row :gutter="20">
                 <el-col :sm="24" :md="12">

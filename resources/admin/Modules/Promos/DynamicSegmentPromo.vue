@@ -1,5 +1,5 @@
 <template>
-    <div class="fc_promo_wrapper">
+    <div class="fc_promo_wrapper tk_brand_promo">
         <div class="text-align-center fluentcrm_header fc_promo_heading">
             <h1 class="">{{$t('Dynamic Segments')}}</h1>
             <p>{{$t('create_dynamic_segments_of_contacts_introduction')}}</p>

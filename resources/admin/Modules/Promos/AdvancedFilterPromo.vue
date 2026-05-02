@@ -1,5 +1,5 @@
 <template>
-    <div class="fc_promo_body">
+    <div class="fc_promo_body tk_brand_promo">
         <div style="background: #f9fafa;padding: 20px;text-align: center;display: block;overflow: hidden;" class="promo_block">
             <h2>{{$t('Advanced Filter is a pro feature')}}</h2>
             <p>

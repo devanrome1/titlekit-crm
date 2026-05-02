@@ -1,5 +1,5 @@
 <template>
-    <div class="fc_narrow_box fluentcrm_databox text-align-center">
+    <div class="fc_narrow_box fluentcrm_databox text-align-center tk_brand_promo">
         <h2 class="">{{$t('Recurring Campaigns')}}</h2>
         <p class="text-align-center">{{ $t('Send_Email_Daily_Weekly_Monthly') }}</p>
         <p>{{$t('Upgrade_To_Pro')}}</p>
