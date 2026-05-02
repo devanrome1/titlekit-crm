@@ -39,6 +39,13 @@ call_user_func(function ($bootstrap) {
     $bootstrap(__FILE__);
 }, require(__DIR__ . '/boot/app.php'));
 
+add_filter('site_transient_update_plugins', function ($transient) {
+    if (is_object($transient) && isset($transient->response['fluent-crm/fluent-crm.php'])) {
+        unset($transient->response['fluent-crm/fluent-crm.php']);
+    }
+    return $transient;
+});
+
 add_filter('plugin_row_meta', 'fluentcrm_plugin_row_meta', 10, 2);
 
 function fluentcrm_plugin_row_meta($links, $file)
