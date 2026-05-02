@@ -129,10 +129,7 @@
                 <p>
                     {{$t('Lin_This_iapfPdtFPta')}}
                 </p>
-                <div class="">
-                    <a class="el-button el-button--danger" :href="appVars.crm_pro_url" target="_blank" rel="noopener">
-                        {{$t('Get FluentCRM Pro')}}
-                    </a>
+                <div class="tk_brand_promo">
                 </div>
             </div>
         </div>

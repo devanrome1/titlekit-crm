@@ -211,7 +211,7 @@
                             <el-tooltip class="item" placement="bottom-start" effect="light">
                                 <div slot="content">
                                     <p>
-                                        Enable or Disable Multi-Thread Email Sending. If you enable this, FluentCRM try to send emails in parallel.
+                                        Enable or Disable Multi-Thread Email Sending. If you enable this, {{ appVars.brand_name }} will try to send emails in parallel.
                                     </p>
                                 </div>
                                 <i class="el-icon-info text-info"></i>
@@ -240,7 +240,7 @@
                             <el-tooltip class="item" placement="bottom-start" effect="light">
                                 <div slot="content">
                                     <p>
-                                        Enable to log FluentCRM system events. Useful for debugging purpose.
+                                        Enable to log {{ appVars.brand_name }} system events. Useful for debugging purpose.
                                     </p>
                                 </div>
                                 <i class="el-icon-info text-info"></i>

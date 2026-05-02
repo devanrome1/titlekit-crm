@@ -57,7 +57,7 @@ jQuery(($) => {
                         })
                         .catch(() => {
                             window.FLUENTCRM.Vue.prototype.$notify({
-                                message: 'FluentCRM could not renew the nonce. Please refresh the page and try again.',
+                                message: window.fcAdmin.brand_name + ' could not renew the nonce. Please refresh the page and try again.',
                                 type: 'info',
                                 customClass: 'fc_bottom-right'
                             });

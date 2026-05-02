@@ -42,15 +42,7 @@
 
         <template v-if="!loading">
             <div v-if="!has_campaign_pro">
-                <div class="fc_sidebar_card text-align-center">
-                    <div class="fc_card_header">
-                        <h3>{{ $t('Get more related contact info with Pro') }}</h3>
-                    </div>
-                    <div style="padding: 10px 20px 20px; background: white;" class="fc_sidebar_card_content">
-                        <p>{{ $t('Fluent_CRM_Pro_Alert') }}</p>
-                        <a :href="appVars.crm_pro_url" target="_blank"
-                           class="button button-primary">{{ $t('Get FluentCRM Pro') }}</a>
-                    </div>
+                <div class="fc_sidebar_card text-align-center tk_brand_promo">
                 </div>
             </div>
             <div v-else-if="!hasWidgets">

@@ -65,7 +65,7 @@
                                             <el-option label="Subscribed" value="subscribed"></el-option>
                                             <el-option label="Transactional" value="transactional"></el-option>
                                         </el-select>
-                                        <p class="fc_inline_help">{{ $t('Status for your new contacts who are not exist in FluentCRM Database') }}</p>
+                                        <p class="fc_inline_help">{{ $t('Status for your new contacts who are not exist in') }} {{ appVars.brand_name }} {{ $t('Database') }}</p>
                                     </el-form-item>
                                 </el-col>
                             </el-row>

@@ -92,8 +92,7 @@
                     <h3>{{ $t('Integrations') }}</h3>
                 </div>
                 <div class="fluentcrm_pad_around">
-                    <p>{{$t('fluentcrtm_integrations_with_all_of_plugins')}} <a
-                            rel="noopener noffollow" href="https://fluentcrm.com?utm_source=dashboard&utm_medium=plugin&utm_campaign=pro&utm_id=wp">{{$t('pro version of FluentCRM')}}</a></p>
+                    <p>{{$t('fluentcrtm_integrations_with_all_of_plugins')}} {{ appVars.brand_name }} Pro</p>
 
                     <h4>{{ $t('ECOMMERCE INTEGRATION:') }}</h4>
                     <ul>

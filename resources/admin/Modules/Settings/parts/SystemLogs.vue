@@ -3,7 +3,7 @@
         <div class="fluentcrm_header d-flex items-center justify-between">
             <div class="fluentcrm_header_title">
                 <h3>{{ $t('System Logs') }}</h3>
-                <p>Logs from FluentCRM System Events - Useful for debugging purpose</p>
+                <p>Logs from {{ appVars.brand_name }} System Events - Useful for debugging purpose</p>
             </div>
             <div class="fluentcrm-templates-action-buttons fluentcrm-actions">
                 <div class="fc_right_search">

@@ -230,7 +230,7 @@ export default {
                 }
             } else if (item.action == 'display_condition') {
                 if (!window.fcVisualVars.has_conditions) {
-                    this.$notify.error(this.$t('Please update FluentCRM Pro first'));
+                    this.$notify.error(this.$t('Please update') + ' ' + this.appVars.brand_name + ' Pro ' + this.$t('first'));
                     return;
                 }
                 this.initDisplayCondition(item.items);

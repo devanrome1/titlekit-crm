@@ -91,16 +91,11 @@
 
                 </div>
             </template>
-            <div class="text-align-center" v-else>
+            <div class="text-align-center tk_brand_promo" v-else>
                 <h2>{{$t('Import Funnel From JSON File')}}</h2>
                 <p>
                     {{ $t('importing_funnel_from_json_file') }}
                 </p>
-                <hr />
-                <p>{{$t('Upgrade_To_Pro')}}</p>
-                <a class="el-button el-button--danger" :href="appVars.crm_pro_url" target="_blank" rel="noopener">
-                    {{$t('Get FluentCRM Pro')}}
-                </a>
             </div>
         </div>
     </div>

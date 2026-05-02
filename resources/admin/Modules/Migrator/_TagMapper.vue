@@ -9,7 +9,7 @@
             <thead>
             <tr>
                 <th>{{ driver | ucFirst }} {{ item_label }}</th>
-                <th>FluentCRM {{ item_label }}</th>
+                <th>{{ appVars.brand_name }} {{ item_label }}</th>
                 <th>
                     {{$t('Auto Create')}} {{ item_label }}?
                     <div style="line-height: 0">
@@ -24,7 +24,7 @@
                 <td>{{ tag.remote_name }}</td>
                 <td>
                     <span style="font-style: italic;" v-if="tag.will_create == 'yes'">
-                        {{ item_label }} {{$t('will be created automatically in FluentCRM')}}
+                        {{ item_label }} {{$t('will be created automatically in')}} {{ appVars.brand_name }}
                     </span>
                     <option-selector v-else-if="element_ready" v-model="tag.fluentcrm_id"
                                      :field="{ is_multiple: false, creatable: true, option_key: option_key }"/>

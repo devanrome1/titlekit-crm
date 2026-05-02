@@ -67,7 +67,7 @@
                 <p>{{$t('You have to add')}} <code>define('FLUENTCRM_IS_DEV_FEATURES', true);</code> {{$t('in your')}} wp-config.php {{$t('to make this feature work')}}</p>
                 <hr>
                 <div v-loading="loading" class="fc_global_form_builder text-align-center">
-                    <h3>{{$t('Reset FluentCRM Database tables')}}</h3>
+                    <h3>{{$t('Reset')}} {{ appVars.brand_name }} {{$t('Database tables')}}</h3>
                     <p style="color: red;">{{$t('reset_db_warning')}}</p>
                     <confirm placement="top-start" :message="$t('reset_db_conf_warning')"
                              @yes="resetDatabase()">

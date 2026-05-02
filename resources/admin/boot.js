@@ -3,6 +3,15 @@ import FluentLoader from '@/Pieces/FluentLoader';
 
 window.fcAdmin.brand_name = 'TitleKit CRM';
 
+if (window.fcAdmin.trans) {
+    Object.keys(window.fcAdmin.trans).forEach(key => {
+        const value = window.fcAdmin.trans[key];
+        if (typeof value === 'string' && value.indexOf('FluentCRM') !== -1) {
+            window.fcAdmin.trans[key] = value.replace(/FluentCRM/g, window.fcAdmin.brand_name);
+        }
+    });
+}
+
 window.FLUENTCRM = new FLUENTCRM();
 
 window.FLUENTCRM.Vue.prototype.appVars = window.fcAdmin;

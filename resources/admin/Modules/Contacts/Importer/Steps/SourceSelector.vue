@@ -26,10 +26,7 @@
             </router-link>
         </template>
 
-        <div class="fc_narrow_box fluentcrm_databox text-align-center" v-if="disabledText && buttonDisabled">
-            <p v-html="disabledText"></p>
-            <a class="el-button el-button--danger" :href="appVars.crm_pro_url" target="_blank"
-               rel="noopener">{{ $t('Get FluentCRM Pro') }}</a>
+        <div class="fc_narrow_box fluentcrm_databox text-align-center tk_brand_promo" v-if="disabledText && buttonDisabled">
         </div>
 
         <div slot="footer" class="dialog-footer">

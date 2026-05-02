@@ -55,13 +55,7 @@
                                 </el-col>
                             </el-row>
                             <div v-if="funnel.trigger_name && triggers[funnel.trigger_name].disabled"
-                                 style="background: whitesmoke;padding: 20px 10px; margin: 0;text-align: center;display: block;overflow: hidden;"
-                                 class="promo_block">
-                                <p>{{ $t('install_fluentcrm_pro') }}</p>
-                                <a class="el-button el-button--danger" :href="appVars.crm_pro_url"
-                                   target="_blank" rel="noopener">
-                                    {{ $t('Get FluentCRM Pro') }}
-                                </a>
+                                 class="promo_block tk_brand_promo">
                             </div>
                         </el-col>
                     </el-row>

@@ -11,7 +11,7 @@
         >
             <div>
                 <el-input type="textarea" :rows="15" :value="errorMessage" readonly></el-input>
-                <p>FluentCRM is expecting JSON data but HTML returned</p>
+                <p>{{ appVars.brand_name }} is expecting JSON data but HTML returned</p>
             </div>
             <div slot="footer" class="dialog-footer">
                 <el-button @click="showErrorModal = false">Close</el-button>

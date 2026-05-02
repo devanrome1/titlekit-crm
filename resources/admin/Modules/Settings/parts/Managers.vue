@@ -141,13 +141,7 @@
         </el-dialog>
     </div>
     <div v-else>
-        <div class="fc_narrow_box fluentcrm_databox text-align-center">
-            <h2 class="">{{ $t('CRM Managers - Roles and Permissions') }}</h2>
-            <p class="text-align-center">{{ $t('crm_managers_roles_and_permissions') }}</p>
-            <hr/>
-            <p>{{ $t('Upgrade_To_Pro') }}</p>
-            <a class="el-button el-button--danger" :href="appVars.crm_pro_url" target="_blank"
-               rel="noopener">{{ $t('Get FluentCRM Pro') }}</a>
+        <div class="fc_narrow_box fluentcrm_databox text-align-center tk_brand_promo">
         </div>
     </div>
 </template>

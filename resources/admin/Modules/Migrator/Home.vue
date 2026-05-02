@@ -52,7 +52,7 @@
                 <div v-else-if="step == 3" class="fc_crm_selection_step">
                     <div class="fc_step_header">
                         <h3>{{$t('Map your Data')}}</h3>
-                        <p>{{$t('Please configure')}} {{ current_driver.title }} {{$t('associate data with FluentCRM')}}</p>
+                        <p>{{$t('Please configure')}} {{ current_driver.title }} {{$t('associate data with')}} {{ appVars.brand_name }}</p>
                     </div>
 
                     <el-form label-position="top" :data="map_settings">
@@ -75,7 +75,7 @@
                         <template v-if="segment_options.all_ready">
 
                             <div style="margin-bottom: 20px;" v-if="current_driver.supports.auto_tag_mapper">
-                                <el-checkbox v-model="segment_options.auto_mapping" true-label="yes">Automatically map tags from {{current_driver.title}} in FluentCRM</el-checkbox>
+                                <el-checkbox v-model="segment_options.auto_mapping" true-label="yes">Automatically map tags from {{current_driver.title}} in {{ appVars.brand_name }}</el-checkbox>
                             </div>
 
                             <el-form-item v-if="segment_options.tags.length && segment_options.auto_mapping != 'yes'" :label="$t('Map Tags')">
@@ -101,7 +101,7 @@
 
                             <el-row :gutter="30">
                                 <el-col :md="12" :sm="24">
-                                    <el-form-item :label="$t('Assigned List in FluentCRM (optional)')">
+                                    <el-form-item :label="$t('Assigned List in') + ' ' + appVars.brand_name + ' ' + $t('(optional)')">
                                         <option-selector v-model="map_settings.local_list_id"
                                                          :field="{ is_multiple: false, creatable: true, option_key: 'lists' }"/>
                                         <p>{{$t('Will be applied to all the imported contacts')}}</p>

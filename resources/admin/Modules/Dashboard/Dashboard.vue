@@ -153,21 +153,6 @@
                         </div>
                     </div>
                 </div>
-                <template v-else-if="!has_campaign_pro">
-                    <div class="fc_m_20 fc_quick_links">
-                        <div class="fluentcrm_header">
-                            <div class="fluentcrm_header_title">
-                                Hi {{ appVars.auth.first_name }} {{ appVars.auth.last_name }},
-                            </div>
-                        </div>
-                        <div class="fluentcrm_body" style="padding: 10px 20px">
-                            <p style="font-size: 110%;">Do more with <b>FluentCRM Pro</b> by using more integrations, advanced automations, sequence emails and in-detailed analytics.</p>
-                            <p>
-                                <a class="el-button el-button--primary el-button--large" href="https://fluentcrm.com/?utm_source=dashboard&utm_medium=plugin&utm_campaign=pro&utm_id=wp" target="_blank" rel="noopener">Upgrade to Pro Now</a>
-                            </p>
-                        </div>
-                    </div>
-                </template>
                 <div v-if="system_tips" class="fc_m_20 fc_system_tips">
                     <div style="    background: rgb(255 239 98);color: black;" class="fluentcrm_header">
                         <div style="width: 100%;" class="fluentcrm_header_title text-align-center">

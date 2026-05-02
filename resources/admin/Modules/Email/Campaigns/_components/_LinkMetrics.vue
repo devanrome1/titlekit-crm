@@ -18,9 +18,7 @@
             </el-table>
             <el-empty :image-size="135" :description="$t('No link activity recorded yet')" v-else />
         </template>
-        <div style="padding: 20px 20px 40px;" class="text-align-center" v-else>
-            <p>This feature is not available on your plan. Please upgrade to the PRO plan to unlock all these awesome features including <b>Link clicks analytics</b></p>
-            <a :href="appVars.crm_pro_url" target="_blank" rel="noopener" class="el-button el-button--danger">{{ $t('Get FluentCRM Pro') }}</a>
+        <div class="text-align-center tk_brand_promo" v-else>
         </div>
     </div>
 </template>

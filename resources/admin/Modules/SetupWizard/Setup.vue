@@ -2,7 +2,7 @@
     <div class="setup_container">
         <div class="setup_wrapper">
             <div class="header">
-                <h1>FluentCRM</h1>
+                <h1>{{ appVars.brand_name }}</h1>
             </div>
             <div class="navigation">
                 <el-steps finish-status="success" :active="active_step" align-center>
@@ -15,7 +15,7 @@
             </div>
             <div class="setup_body">
                 <template v-if="active_step === 0">
-                    <h3>{{ $t('Welcome to FluentCRM!') }}</h3>
+                    <h3>{{ $t('Welcome to') }} {{ appVars.brand_name }}!</h3>
                     <p>{{ $t('thankyou_for_using_fluentcrm') }}
                         <b>{{ $t("FluentCrm_Welcome_desc") }}</b></p>
                     <p>{{ $t('welcome_to_fluentcrm_return_to_wordpress_dashboard') }}</p>
@@ -160,7 +160,7 @@
                     </div>
 
                     <div class="suggest_box share_essential">
-                        <p style="margin-bottom: 10px;"><b>{{ $t('Help us to make FluentCRM better') }}</b></p>
+                        <p style="margin-bottom: 10px;"><b>{{ $t('Help us to make') }} {{ appVars.brand_name }} {{ $t('better') }}</b></p>
                         <el-checkbox true-label="yes" false-label="no" v-model="share_essentials">
                             {{ $t('Share Essentials') }}
                         </el-checkbox>
@@ -214,7 +214,7 @@
             </div>
         </div>
         <el-dialog
-            title="Build a better FluentCRM"
+            :title="`Build a better ${appVars.brand_name}`"
             :close-on-click-modal="false"
             :show-close="false"
             :append-to-body="true"

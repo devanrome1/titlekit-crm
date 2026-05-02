@@ -97,7 +97,7 @@
                                     :placeholder="$t('Select date and time')">
                                 </el-date-picker>
                             </div>
-                            <p v-if="!this.has_campaign_pro">{{ $t('To use this feature you need FluentCRM Pro.') }} <a target="_blank" :href="appVars.upgrade_url">{{ $t('Please upgrade.') }}</a></p>
+                            <p v-if="!this.has_campaign_pro" class="tk_brand_promo">{{ $t('To use this feature you need') }} {{ appVars.brand_name }} Pro.</p>
                             <p>{{ $t('Camp_Notice_About_Time') }}</p>
                             <p>{{ $t('Cam_Current_ST_oySS') }}: <code>{{ campaign.server_time }}</code></p>
                             <br/><br/>

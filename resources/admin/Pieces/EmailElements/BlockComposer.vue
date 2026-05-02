@@ -95,15 +95,7 @@
                                            :is="selectedDesign.component"/>
                             </div>
                             <div v-else-if="selectedDesign.template_type == 'visual_builder_demo'">
-                                <div style="max-width: 600px; margin: 40px auto; text-align: center;"
-                                     class="fluentcrm_databox">
-                                    <h3>{{ $t('Build Email By Drag and Drop Visual Editor') }}</h3>
-                                    <p>{{ $t('Visual_Email_Builder_Alert') }}</p>
-                                    <p>
-                                        <a class="el-button el-button--danger el-button--large"
-                                           href="https://fluentcrm.com/?utm_source=dashboard&utm_medium=plugin&utm_campaign=pro&utm_id=wp"
-                                           target="_blank" rel="noopener">{{ $t('Upgrade to FluentCRM Pro') }}</a>
-                                    </p>
+                                <div class="fluentcrm_databox tk_brand_promo">
                                 </div>
                             </div>
                             <div class="fc_composer_raw_hrml" v-else>

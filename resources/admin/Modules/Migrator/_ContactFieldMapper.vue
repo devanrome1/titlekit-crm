@@ -4,7 +4,7 @@
             <thead>
             <tr>
                 <th>{{ driver | ucFirst }} {{$t('Field')}}</th>
-                <th>{{$t('FluentCRM Field')}}</th>
+                <th>{{ appVars.brand_name }} {{$t('Field')}}</th>
                 <th>{{$t('Skip')}}</th>
             </tr>
             </thead>

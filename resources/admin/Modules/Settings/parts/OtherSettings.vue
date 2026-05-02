@@ -29,7 +29,7 @@
                 <h2>{{ role_based_tagging_settings_fields.title }}</h2>
                 <p>{{ role_based_tagging_settings_fields.sub_title }}</p>
                 <hr/>
-                <p style="color: red;" v-if="!has_campaign_pro && role_based_tagging_settings.status == 'yes'">{{$t('This feature only available on FluentCRM Pro.')}} <a target="_blank" rel="noopener" href="https://fluentcrm.com?utm_source=dashboard&utm_medium=plugin&utm_campaign=pro&utm_id=wp">{{$t('Please purchase Pro')}}</a> {{$t('to enable this feature')}}</p>
+                <p style="color: red;" v-if="!has_campaign_pro && role_based_tagging_settings.status == 'yes'">{{$t('This feature requires an active')}} {{ appVars.brand_name }} Pro {{$t('license.')}}</p>
                 <form-builder class="mt-20" :formData="role_based_tagging_settings" :fields="role_based_tagging_settings_fields.fields"></form-builder>
             </div>
 
@@ -43,7 +43,7 @@
             <div v-if="woo_checkout_fields" class="settings-section fluentcrm_databox" style="padding-bottom: 15px">
                 <h2>{{ woo_checkout_fields.title }}</h2>
                 <p>{{ woo_checkout_fields.sub_title }}</p>
-                <p style="color: red;" v-if="!has_campaign_pro">{{$t('This feature only available on FluentCRM Pro.')}} <a target="_blank" rel="noopener" href="https://fluentcrm.com?utm_source=dashboard&utm_medium=plugin&utm_campaign=pro&utm_id=wp">{{$t('Please purchase Pro')}}</a> {{$t('to enable this feature')}}</p>
+                <p style="color: red;" v-if="!has_campaign_pro">{{$t('This feature requires an active')}} {{ appVars.brand_name }} Pro {{$t('license.')}}</p>
                 <hr/>
                 <form-builder class="mt-20" :formData="woo_checkout_settings" :fields="woo_checkout_fields.fields"></form-builder>
             </div>

@@ -59,7 +59,7 @@
             </template>
 
             <template v-else-if="select_job.action_name == 'add_to_email_sequence'">
-                <span style="padding: 10px;" v-if="!has_campaign_pro">{{ $t('Require FluentCRM Pro') }}</span>
+                <span style="padding: 10px;" v-if="!has_campaign_pro">{{ $t('Require') }} {{ appVars.brand_name }} Pro</span>
                 <template v-else>
                     <div class="fc_bulk_item">
                         <label>{{ $t('Select Sequence') }}</label>
@@ -126,7 +126,7 @@
             </template>
 
             <template v-else-if="select_job.action_name == 'add_to_automation'">
-                <span style="padding: 10px;" v-if="!has_campaign_pro">Require FluentCRM Pro</span>
+                <span style="padding: 10px;" v-if="!has_campaign_pro">{{ $t('Require') }} {{ appVars.brand_name }} Pro</span>
                 <template v-else>
                     <div class="fc_bulk_item">
                         <label>{{ $t('Select Automation Funnel') }}</label>

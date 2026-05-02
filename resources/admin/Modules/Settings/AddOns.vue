@@ -255,7 +255,7 @@
                     </div>
 
                     <div class="fc-advanced-modules-wrap">
-                        <div v-if="!has_campaign_pro" class="fc-advanced-module-box">
+                        <div v-if="!has_campaign_pro" class="fc-advanced-module-box tk_brand_promo">
                             <div class="fc-advanced-module-header">
                                 <div class="right">
                                     <h5>

@@ -94,7 +94,7 @@
                         :placeholder="$t('Friendly Name for identification')"
                         v-model="adding_key.api_name"></el-input>
                 </el-form-item>
-                <el-form-item :label="$t('Associate FluentCRM Manager (Non-Admin Only)')">
+                <el-form-item :label="$t('Associate') + ' ' + appVars.brand_name + ' ' + $t('Manager (Non-Admin Only)')">
                     <el-select v-model="adding_key.api_user_id">
                         <el-option v-for="manager in managers" :key="manager.id" :value="manager.id"
                                    :label="manager.full_name + ' ' + manager.email"></el-option>
