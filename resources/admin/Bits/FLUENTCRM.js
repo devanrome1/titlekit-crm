@@ -60,7 +60,7 @@ export default class FLUENTCRM {
                 handleError: self.handleError,
                 percent: self.percent,
                 changeTitle(title) {
-                    jQuery('head title').text(title + ' - FluentCRM');
+                    jQuery('head title').text(title + ' - ' + self.appVars.brand_name);
                 },
                 $t,
                 $_n(singular, plural, count) {

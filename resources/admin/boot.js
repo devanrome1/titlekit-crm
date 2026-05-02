@@ -1,6 +1,8 @@
 import FLUENTCRM from '@/Bits/FLUENTCRM';
 import FluentLoader from '@/Pieces/FluentLoader';
 
+window.fcAdmin.brand_name = 'TitleKit CRM';
+
 window.FLUENTCRM = new FLUENTCRM();
 
 window.FLUENTCRM.Vue.prototype.appVars = window.fcAdmin;
