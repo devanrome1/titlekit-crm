@@ -61,7 +61,7 @@
                     <el-row :gutter="30">
                         <el-col :sm="24" :md="12">
                             <el-form-item :label="$t('Email Subject')">
-                                <input-popover doc_url="https://fluentcrm.com/docs/merge-codes-smart-codes-usage/"
+                                <input-popover doc_url=""
                                                popper_extra="fc_with_c_fields" :placeholder="$t('Email Subject')"
                                                :data="smart_codes"
                                                v-model="email_template.email_subject"/>

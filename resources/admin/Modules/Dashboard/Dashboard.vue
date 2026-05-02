@@ -107,19 +107,7 @@
                         </ul>
                     </div>
                 </div>
-                <div v-if="recommendation" class="fc_m_20 fc_quick_links">
-                    <div style="background: #7757e7;color: white;" class="fluentcrm_header">
-                        <div style="width: 100%;" class="fluentcrm_header_title text-align-center">
-                            {{recommendation.title}}
-                        </div>
-                    </div>
-                    <div class="fluentcrm_body" style="padding: 10px 20px">
-                        <p v-html="recommendation.description" style="font-size: 110%;"></p>
-                        <p>
-                            <a class="el-button el-button--danger el-button--large" href="https://fluentcrm.com/?utm_source=dashboard&utm_medium=plugin&utm_campaign=pro&utm_id=wp" target="_blank" rel="noopener">{{recommendation.btn_text}}</a>
-                        </p>
-                        <p v-if="recommendation.learn_more"><a target="_blank" :href="recommendation.learn_more">Learn more</a> and {{recommendation.base_title}}</p>
-                    </div>
+                <div v-if="recommendation" class="fc_m_20 fc_quick_links tk_brand_promo">
                 </div>
                 <div class="fc_m_20 fc_quick_links">
                     <div class="fluentcrm_header">
@@ -164,16 +152,7 @@
                     </div>
                 </div>
 
-                <div class="fc_m_20 fc_request_review_widget fc_quick_links" v-if="showReviewWidget">
-                    <div class="fluentcrm_body">
-                        <div class="fc_request_review_header">
-                            <h4>{{ $t('Love this Plugin ?') }}</h4>
-                            <i class="el-icon-circle-close" @click="closeReviewWidget"></i>
-                        </div>
-                        <p>{{ $t('Request_review_Desc') }}</p>
-                        <a href="https://wordpress.org/support/plugin/fluent-crm/reviews/#new-post" target="_blank"
-                           class="el-button el-button--primary el-button--small fc_primary_button">{{ $t('Write a Review') }}</a>
-                    </div>
+                <div class="fc_m_20 fc_request_review_widget fc_quick_links tk_brand_promo" v-if="showReviewWidget">
                 </div>
             </el-col>
         </el-row>

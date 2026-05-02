@@ -15,8 +15,6 @@
                                 <li>{{ $t('Type') }} <code>@</code> {{ $t('to see smart tags') }}</li>
                                 <li>{{ $t('Type') }} <code>/</code> {{ $t('to see All Available Blocks') }}</li>
                             </ul>
-                            <p>{{ $t('Please') }} <a href="https://fluentcrm.com/docs/merge-codes-smart-codes-usage/"
-                                         target="_blank">{{ $t('read the doc for advanced usage') }}</a></p>
                         </div>
                         <span slot="reference" class="el-icon el-icon-help"></span>
                     </el-popover>

@@ -13,15 +13,6 @@
         </template>
         <div v-else>
             <div class="fc_adv_report_demo tk_brand_promo">
-                <div class="fc_report_wrap">
-                    <div class="fc_report_promo">
-                        <h3>{{ $t('Get_Advance_Report_Title') }}</h3>
-                        <p>{{ $t('Get_Advance_Report_Desc') }}</p>
-                        <p>
-                            <a class="el-button el-button--danger el-button--large" href="https://fluentcrm.com/?utm_source=dashboard&utm_medium=plugin&utm_campaign=pro&utm_id=wp" target="_blank" rel="noopener">{{ $t('Upgrade to FluentCRM Pro') }}</a>
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

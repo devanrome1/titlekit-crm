@@ -54,7 +54,7 @@
                             Server Memory Limit: <code>{{server_info.memory_limit}}</code>. Current usage: <code>{{server_info.usage_percent}}%</code>. Max Execution Time: <code>{{server_info.max_execution_time}}</code>
                         </p>
                         <p style="color: red;" v-if="!server_info.has_server_cron">
-                            Server Side Cron is not enabled. Please consider enabling server side cron. <a target="_blank" rel="noopener" href="https://fluentcrm.com/docs/fluentcrm-cron-job-basics-and-checklist/">Read more about server side cron here.</a>
+                            Server Side Cron is not enabled. Please consider enabling server side cron.
                         </p>
 
                     </template>

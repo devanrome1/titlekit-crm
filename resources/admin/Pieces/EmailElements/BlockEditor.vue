@@ -45,7 +45,6 @@ export default {
             '<li>- ' + this.$t('Type') + ' <code>[[</code> ' + this.$t('to insert post/page links') + '</li>' +
             '<li>- ' + this.$t('BlockEditor.You_can_Use_Fallback_value') + ' <code>{{contact.first_name|There}}</code></li>' +
             '</ul>' +
-            this.$t('Please') + ' <b><a href="https://fluentcrm.com/docs/merge-codes-smart-codes-usage/" target="_blank" rel="noopener">' + this.$t('read the doc for advanced usage') + '</a></b>' +
             '</div>'
         );
     }

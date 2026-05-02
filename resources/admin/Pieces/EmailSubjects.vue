@@ -2,7 +2,7 @@
     <div class="fluentcrm_email_composer">
         <el-form :label-position="label_align" label-width="220px" :model="campaign">
             <el-form-item :label="$t('Email Subject')">
-                <input-popover doc_url="https://fluentcrm.com/docs/merge-codes-smart-codes-usage/" popper_extra="fc_with_c_fields" :placeholder="$t('Email Subject')" :data="smartcodes" v-model="campaign.email_subject"/>
+                <input-popover doc_url="" popper_extra="fc_with_c_fields" :placeholder="$t('Email Subject')" :data="smartcodes" v-model="campaign.email_subject"/>
                 <p style="margin: 0" v-if="multi_subject_status">{{ $t('A_B_Testing_Alert') }}</p>
             </el-form-item>
 
@@ -27,7 +27,7 @@
                             <tbody>
                             <tr v-for="(subject,subjectIndex) in campaign.subjects" :key="subjectIndex">
                                 <td>
-                                    <input-popover doc_url="https://fluentcrm.com/docs/merge-codes-smart-codes-usage/" :placeholder="$t('Subject Test')+' '+ (subjectIndex + 1)" :data="smartcodes"
+                                    <input-popover doc_url="" :placeholder="$t('Subject Test')+' '+ (subjectIndex + 1)" :data="smartcodes"
                                                    v-model="subject.value"/>
                                 </td>
                                 <td>

@@ -1,5 +1,5 @@
 <template>
-    <input-popover doc_url="https://fluentcrm.com/docs/merge-codes-smart-codes-usage/" :field-type="field.field_type" :placeholder="field.placeholder" :popper_class="field.popper_class" :data="smartcodes" v-model="model"/>
+    <input-popover doc_url="" :field-type="field.field_type" :placeholder="field.placeholder" :popper_class="field.popper_class" :data="smartcodes" v-model="model"/>
 </template>
 
 <script type="text/babel">

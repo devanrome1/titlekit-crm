@@ -12,9 +12,6 @@
                     @click="addKey()"
                 >{{$t('Add New Key')}}
                 </el-button>
-                <a target="_blank" rel="noopener" href="https://rest-api.fluentcrm.com/" class="el-button el-button--info el-button--medium">
-                    {{$t('Documentation')}}
-                </a>
             </div>
         </div>
         <div class="" style="position: relative;">

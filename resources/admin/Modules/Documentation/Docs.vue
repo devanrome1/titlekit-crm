@@ -2,12 +2,6 @@
     <div class="fc_docs">
         <div style="max-width: 800px; margin: 50px auto; padding: 0px 20px;" class="fc_doc_header text-align-center">
             <h1>{{ $t('How can we help you?') }}</h1>
-            <p>{{ $t('Please view the') }} <a href="https://fluentcrm.com/docs">{{ $t('documentation') }}</a>
-                {{ $t('still_cant_find_the_answer') }} <a
-                    href="https://wpmanageninja.com/support-tickets/">{{ $t('open a support ticket') }}</a>
-                {{ $t('and we will be happy to answer your questions and assist you with any problems.') }}.
-                <br />Want to discuss something with users like you? <a target="_blank" rel="noopener" href="https://www.facebook.com/groups/fluentcrm"><b>Join our facebook community</b></a>
-            </p>
             <el-input
                 v-loading="fetching"
                 clearable

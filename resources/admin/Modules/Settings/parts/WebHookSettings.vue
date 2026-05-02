@@ -175,7 +175,7 @@
 
                     <el-alert type="info" :closable="false" style="margin-bottom:20px">
                         {{$t('copy_webhook_keys_intro')}}
-                        <span style="color:#E6A23C">{{$t('The email address is required!')}}</span> <a target="_blank" rel="noopener" href="https://fluentcrm.com/docs/webhook-integration/">{{$t('Read the documentation')}}</a>
+                        <span style="color:#E6A23C">{{$t('The email address is required!')}}</span>
                     </el-alert>
 
                     <el-table :empty-text="$t('No Data Found')" border stripe height="250" :data="fields">

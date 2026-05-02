@@ -242,7 +242,6 @@
                                     {{ experimental_features.event_tracking == 'yes' ? $t('Enabled') : $t('Disabled') }}
                                 </span>
 
-                                    <a href="https://fluentcrm.com/docs/event-tracking-automation/" target="_blank" class="fc-learn-more-btn">{{ $t('Learn More') }}</a>
                                 </div>
                             </div>
                         </div>
@@ -256,19 +255,6 @@
 
                     <div class="fc-advanced-modules-wrap">
                         <div v-if="!has_campaign_pro" class="fc-advanced-module-box tk_brand_promo">
-                            <div class="fc-advanced-module-header">
-                                <div class="right">
-                                    <h5>
-                                        <span class="text">
-                                            {{ $t('Addons.fluentcrm_pro.title') }}
-                                        </span>
-                                    </h5>
-                                    <p>{{ $t('with_fluentcrm_pro_integrate_with_other_plugins') }}</p>
-                                </div>
-                            </div>
-                            <div class="fc-advanced-module-footer">
-                                <a target="_blank" class="fc-pro-btn el-button el-button--danger" href="https://fluentcrm.com?utm_source=dashboard&utm_medium=plugin&utm_campaign=pro&utm_id=wp">{{$t('Get FluentCRM Pro Now')}}</a>
-                            </div>
                         </div>
                         <div v-for="(addon, addOnKey) in addOns" :key="addOnKey" class="fc-advanced-module-box">
                             <div class="fc-advanced-module-header">

@@ -9,10 +9,7 @@
             <template slot="title">
                 <p>{{ $t('No active Abandoned Cart automation.') }} <a href="#" @click="goToFunnel">{{
                         $t('Set up an automation')
-                    }}</a> to recover lost sales. To Learn More <a
-                    href="https://fluentcrm.com/docs/abandon-cart-automation/" target="_blank">{{
-                        $t('Click here')
-                    }}</a>.
+                    }}</a> to recover lost sales.
                 </p>
             </template>
         </el-alert>

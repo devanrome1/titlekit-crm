@@ -56,7 +56,7 @@
                                         style="cursor:pointer; text-decoration: underline;"
                                         @click="disableSync()">{{ $t('click here') }}</span></p>
                                 </div>
-                                <p>{{ $t('WP_CLI_Help') }} <a target="_blank" href="https://fluentcrm.com/docs/wp-cli-commands/">{{ $t('Read CLI Documentation') }}</a></p>
+                                <p>{{ $t('WP_CLI_Help') }}</p>
                             </el-form>
                             <div class="text-align-center" v-else>
                                 <template v-if="syncing_status.has_more">

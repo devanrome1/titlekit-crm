@@ -1,5 +1,5 @@
 <template>
-    <popover doc_url="https://fluentcrm.com/docs/merge-codes-smart-codes-usage/" style="display: inline-block;" btnType="text" :buttonText="'{{ }}'" class="popover-wrapper"
+    <popover doc_url="" style="display: inline-block;" btnType="text" :buttonText="'{{ }}'" class="popover-wrapper"
              :data="editorShortcodes"
              @command="handleCommand"></popover>
 </template>

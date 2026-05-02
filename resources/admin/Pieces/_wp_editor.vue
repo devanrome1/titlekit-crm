@@ -1,7 +1,7 @@
 <template>
     <div class="wp_vue_editor_wrapper">
         <popover v-if="editorShortcodes && editorShortcodes.length" class="popover-wrapper"
-                 doc_url="https://fluentcrm.com/docs/merge-codes-smart-codes-usage/"
+                 doc_url=""
                  :class="{'popover-wrapper-plaintext': !hasWpEditor}" :data="editorShortcodes"
                  @command="handleCommand"></popover>
         <textarea v-if="hasWpEditor" class="wp_vue_editor" :id="editor_id">{{ value }}</textarea>
