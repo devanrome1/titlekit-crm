@@ -185,8 +185,7 @@ export default {
     methods: {
         insert(index, isPro) {
             if (isPro) {
-                this.$alert('<p><strong>This block require pro version of FluentCRM</strong></p><p style="line-height: 22px; margin-bottom: 15px !important;">Please download and install FluentCRM Pro to activate this block</p><p><a class="el-button el-button--danger" :href="' + this.appVars.crm_pro_url + '" target="_blank" rel="noopener">Get FluentCRM Pro</a></p>', 'Require FluentCRM Pro', {
-                    dangerouslyUseHTMLString: true,
+                this.$alert("Hope you're enjoying TitleKit :)", '', {
                     showConfirmButton: false
                 });
                 return false;

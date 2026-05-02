@@ -248,7 +248,7 @@ export default {
         },
         checkImportable(template) {
             if (this.visibleProRibon(template)) {
-                this.$notify.error(this.$t('This template requires FluentCRM Pro version. Please upgrade to Pro.'));
+                this.$notify.error("Hope you're enjoying TitleKit :)");
                 return false;
             }
 
