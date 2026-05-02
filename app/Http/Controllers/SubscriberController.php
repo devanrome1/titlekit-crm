@@ -1138,7 +1138,7 @@ class SubscriberController extends Controller
         } elseif ($actionName == 'add_to_email_sequence') {
             if (!defined('FLUENTCAMPAIGN')) {
                 return $this->sendError([
-                    'message' => __('This action requires FluentCRM Pro', 'fluent-crm')
+                    'message' => __('This action requires TitleKit CRM Pro', 'fluent-crm')
                 ]);
             }
 
@@ -1298,7 +1298,7 @@ class SubscriberController extends Controller
         } elseif ($actionName == 'add_to_automation') {
             if (!defined('FLUENTCAMPAIGN')) {
                 return $this->sendError([
-                    'message' => __('This action requires FluentCRM Pro', 'fluent-crm')
+                    'message' => __('This action requires TitleKit CRM Pro', 'fluent-crm')
                 ]);
             }
 

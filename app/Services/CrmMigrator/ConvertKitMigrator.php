@@ -11,7 +11,7 @@ class ConvertKitMigrator extends BaseMigrator
     {
         return [
             'title'                  => 'ConvertKit',
-            'description'            => __('Migrate your ConvertKit contacts and associate to FluentCRM', 'fluent-crm'),
+            'description'            => __('Migrate your ConvertKit contacts and associate to TitleKit CRM', 'fluent-crm'),
             'logo'                   => fluentCrmMix('images/migrators/convertkit.png'),
             'supports'               => [
                 'tags'                => true,
@@ -42,7 +42,7 @@ class ConvertKitMigrator extends BaseMigrator
                 ]
             ],
             'refresh_on_list_change' => false,
-            'doc_url' => 'https://fluentcrm.com/docs/migrating-into-fluentcrm-from-convertkit/'
+            'doc_url' => ''
         ];
     }
 

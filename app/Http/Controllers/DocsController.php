@@ -92,7 +92,7 @@ class DocsController extends Controller
                 'learn_more_url' => 'https://wordpress.org/plugins/fluent-connect/',
                 'settings_url'   => admin_url('admin.php?page=fluent-connect#/'),
                 'action_text'    => $this->isPluginInstalled('fluent-connect/fluent-connect.php') ? __('Active Fluent Connect', 'fluent-crm') : __('Install Fluent Connect', 'fluent-crm'),
-                'description'    => __('Connect FluentCRM with ThriveCart and create, segment contact and run automation on ThriveCart purchase events.', 'fluent-crm')
+                'description'    => __('Connect TitleKit CRM with ThriveCart and create, segment contact and run automation on ThriveCart purchase events.', 'fluent-crm')
             ],
         ];
 

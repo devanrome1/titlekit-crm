@@ -11,7 +11,7 @@ class ActiveCampaignMigrator extends BaseMigrator
     {
         return [
             'title'                  => 'ActiveCampaign',
-            'description'            => __('Transfer your ActiveCampaign tags and contacts to FluentCRM', 'fluent-crm'),
+            'description'            => __('Transfer your ActiveCampaign tags and contacts to TitleKit CRM', 'fluent-crm'),
             'logo'                   => fluentCrmMix('images/migrators/active_campaign.png'),
             'supports'               => [
                 'tags'                => false,
@@ -42,7 +42,7 @@ class ActiveCampaignMigrator extends BaseMigrator
                 ]
             ],
             'refresh_on_list_change' => false,
-            'doc_url'                => 'https://fluentcrm.com/docs/migrating-into-fluentcrm-from-activecampaign/'
+            'doc_url'                => ''
         ];
     }
 

@@ -18,7 +18,7 @@ class BricksBuilderIntegration
         // Ensure your group name is unique (best to prefix it)
         $groups[] = [
             'name'  => 'fluent_crm',
-            'label' => esc_html__('FluentCRM', 'fluent-crm'),
+            'label' => esc_html__('TitleKit CRM', 'fluent-crm'),
         ];
 
         return $groups;
@@ -44,7 +44,7 @@ class BricksBuilderIntegration
 
         $options[] = [
             'key'     => 'fluent_crm_tags',
-            'label'   => esc_html__('FluentCRM Tags', 'fluent-crm'),
+            'label'   => esc_html__('TitleKit CRM Tags', 'fluent-crm'),
             'group'   => 'fluent_crm',
             'compare' => [
                 'type'        => 'select',
@@ -64,7 +64,7 @@ class BricksBuilderIntegration
 
         $options[] = [
             'key'     => 'fluent_crm_lists',
-            'label'   => esc_html__('FluentCRM Lists', 'fluent-crm'),
+            'label'   => esc_html__('TitleKit CRM Lists', 'fluent-crm'),
             'group'   => 'fluent_crm',
             'compare' => [
                 'type'        => 'select',

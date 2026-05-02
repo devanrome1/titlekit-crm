@@ -170,7 +170,7 @@ class Cleanup
         }
 
         $exporters['fluent-crm'] = [
-            'exporter_friendly_name' => __('FluentCRM Data', 'fluent-crm'),
+            'exporter_friendly_name' => __('TitleKit CRM Data', 'fluent-crm'),
             'callback'               => [$this, 'exportPersonalDataWP'],
         ];
 
@@ -194,7 +194,7 @@ class Cleanup
 
         $data = [
             'group_id'    => 'fluent-crm-contact',
-            'group_label' => __('Fluent CRM Data', 'fluent-crm'),
+            'group_label' => __('TitleKit CRM Data', 'fluent-crm'),
             'item_id'     => 'crm-contact',
             'data'        => []
         ];

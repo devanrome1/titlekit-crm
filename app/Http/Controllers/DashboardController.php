@@ -102,9 +102,7 @@ class DashboardController extends Controller
 
     private function recommendation()
     {
-        if (defined('FLUENTCAMPAIGN')) {
-            return false;
-        }
+        return false;
 
         $recommendations = [];
 

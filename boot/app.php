@@ -32,7 +32,7 @@ return function ($file) {
             add_filter('fluent_crm/dashboard_notices', function ($notices) {
                 if (version_compare(FLUENTCRM_MIN_PRO_VERSION, FLUENTCAMPAIGN_PLUGIN_VERSION, '>')) {
                     $updateUrl = admin_url('plugins.php?s=fluentcampaign-pro&plugin_status=all&fluentcrm_pro_check_update=' . time());
-                    $notices[] = '<div style="padding: 15px 10px;" class="updated"><b>Heads UP: </b> FluentCRM Pro needs to be updated to the latest version. <a href="' . esc_url($updateUrl) . '">Click here to update</a></div>';
+                    $notices[] = '<div style="padding: 15px 10px;" class="updated"><b>Heads UP: </b> TitleKit CRM Pro needs to be updated to the latest version. <a href="' . esc_url($updateUrl) . '">Click here to update</a></div>';
                 }
                 return $notices;
             });
@@ -55,14 +55,14 @@ return function ($file) {
         if (!isset($schedules['fluentcrm_every_minute'])) {
             $schedules['fluentcrm_every_minute'] = array(
                 'interval' => 60,
-                'display'  => esc_html__('Every Minute (FluentCRM)', 'fluentform'),
+                'display'  => esc_html__('Every Minute (TitleKit CRM)', 'fluentform'),
             );
         }
 
         if (!isset($schedules['fluentcrm_scheduled_five_minute_tasks'])) {
             $schedules['fluentcrm_scheduled_five_minute_tasks'] = array(
                 'interval' => 300,
-                'display'  => esc_html__('Every 5 Minutes (FluentCRM)', 'fluentform'),
+                'display'  => esc_html__('Every 5 Minutes (TitleKit CRM)', 'fluentform'),
             );
         }
 

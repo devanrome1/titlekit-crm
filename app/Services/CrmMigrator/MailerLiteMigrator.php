@@ -11,7 +11,7 @@ class MailerLiteMigrator extends BaseMigrator
     {
         return [
             'title'                  => 'MailerLite',
-            'description'            => __('Migrate your MailerLite contacts and associate to FluentCRM', 'fluent-crm'),
+            'description'            => __('Migrate your MailerLite contacts and associate to TitleKit CRM', 'fluent-crm'),
             'logo'                   => fluentCrmMix('images/migrators/mailerlite.png'),
             'supports'               => [
                 'tags'                => true,
@@ -34,7 +34,7 @@ class MailerLiteMigrator extends BaseMigrator
                 ]
             ],
             'refresh_on_list_change' => false,
-            'doc_url' => 'https://fluentcrm.com/docs/migrating-into-fluentcrm-from-mailerlite/'
+            'doc_url' => ''
         ];
     }
 

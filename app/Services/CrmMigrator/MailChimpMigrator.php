@@ -15,7 +15,7 @@ class MailChimpMigrator extends BaseMigrator
     {
         return [
             'title'                  => 'MailChimp',
-            'description'            => __('Transfer your mailchimp lists, tags and contacts from MailChimp to FluentCRM', 'fluent-crm'),
+            'description'            => __('Transfer your mailchimp lists, tags and contacts from MailChimp to TitleKit CRM', 'fluent-crm'),
             'logo'                   => fluentCrmMix('images/migrators/mailchimp.png'),
             'supports'               => [
                 'tags'                => true,
@@ -37,7 +37,7 @@ class MailChimpMigrator extends BaseMigrator
                 ]
             ],
             'refresh_on_list_change' => true,
-            'doc_url'                => 'https://fluentcrm.com/docs/migrating-into-fluentcrm-from-mailchimp/'
+            'doc_url'                => ''
         ];
     }
 

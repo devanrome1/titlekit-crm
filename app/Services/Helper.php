@@ -479,7 +479,7 @@ class Helper
                 'config'        => $classicConfig,
                 'use_gutenberg' => false,
                 'template_type' => 'classic_editor',
-                'template_info' => '<h3>Classic Text Based Email</h3><p>Type your simple email and FluentCRM will send that without altering any design processing. The default footer will be injected after your content if footer is not disabled.</p>'
+                'template_info' => '<h3>Classic Text Based Email</h3><p>Type your simple email and TitleKit CRM will send that without altering any design processing. The default footer will be injected after your content if footer is not disabled.</p>'
             ],
             'raw_html'    => [
                 'id'            => 'raw_html',
@@ -488,7 +488,7 @@ class Helper
                 'config'        => [],
                 'use_gutenberg' => false,
                 'template_type' => 'raw_text_box',
-                'template_info' => '<h3>Raw HTML Template</h3><p>You can use any type of valid html and FluentCRM will send that without altering any design processing.</p>'
+                'template_info' => '<h3>Raw HTML Template</h3><p>You can use any type of valid html and TitleKit CRM will send that without altering any design processing.</p>'
             ]
         ]);
 

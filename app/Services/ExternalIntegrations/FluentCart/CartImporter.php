@@ -127,12 +127,12 @@ class CartImporter
             ],
             'fields' => [
                 'product_type_maps' => [
-                    'label'              => __('Please map your Product and associate FluentCRM Tags', 'fluentcampaign-pro'),
+                    'label'              => __('Please map your Product and associate TitleKit CRM Tags', 'fluentcampaign-pro'),
                     'type'               => 'form-many-drop-down-mapper',
                     'local_label'        => sprintf(__('Select %s Product', 'fluentcampaign-pro'), self::getPluginName()),
-                    'remote_label'       => __('Select FluentCRM Tag that will be applied', 'fluentcampaign-pro'),
+                    'remote_label'       => __('Select TitleKit CRM Tag that will be applied', 'fluentcampaign-pro'),
                     'local_placeholder'  => sprintf(__('Select %s Product', 'fluentcampaign-pro'), self::getPluginName()),
-                    'remote_placeholder' => __('Select FluentCRM Tag', 'fluentcampaign-pro'),
+                    'remote_placeholder' => __('Select TitleKit CRM Tag', 'fluentcampaign-pro'),
                     'field_ajax_selector' => [
                         'option_key' => 'fluent_cart_products'
                     ],
@@ -149,7 +149,7 @@ class CartImporter
                 'sync_import_html'  => [
                     'type'       => 'html-viewer',
                     'heading'    => 'FluentCart Data Sync',
-                    'info'       => __('You can sync all your FluentCart Customers into FluentCRM and all future customers and purchase data will be synced.', 'fluent-crm').'<br />'.__('After this sync you can import by product by product and provide appropriate tags', 'fluent-crm'),
+                    'info'       => __('You can sync all your FluentCart Customers into TitleKit CRM and all future customers and purchase data will be synced.', 'fluent-crm').'<br />'.__('After this sync you can import by product by product and provide appropriate tags', 'fluent-crm'),
                     'dependency' => [
                         'depends_on' => 'import_type',
                         'operator'   => '=',

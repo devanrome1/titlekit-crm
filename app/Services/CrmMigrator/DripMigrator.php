@@ -11,7 +11,7 @@ class DripMigrator extends BaseMigrator
     {
         return [
             'title'                  => 'Drip',
-            'description'            => __('Transfer your Drip tags and contacts to FluentCRM', 'fluent-crm'),
+            'description'            => __('Transfer your Drip tags and contacts to TitleKit CRM', 'fluent-crm'),
             'logo'                   => fluentCrmMix('images/migrators/drip.png'),
             'supports'               => [
                 'tags'                => true,
@@ -41,7 +41,7 @@ class DripMigrator extends BaseMigrator
                 ]
             ],
             'refresh_on_list_change' => false,
-            'doc_url' => 'https://fluentcrm.com/docs/migrating-into-fluentcrm-from-drip/'
+            'doc_url' => ''
         ];
     }
 

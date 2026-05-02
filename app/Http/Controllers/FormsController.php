@@ -193,7 +193,7 @@ class FormsController extends Controller
             ));
 
         $feedDefaults = [
-            'name'           => __('FluentCRM Integration Feed', 'fluent-crm'),
+            'name'           => __('TitleKit CRM Integration Feed', 'fluent-crm'),
             'first_name'     => '',
             'last_name'      => '',
             'email'          => 'email',

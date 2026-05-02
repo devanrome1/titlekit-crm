@@ -54,7 +54,7 @@ class FluentFormInit
         }
 
         $widgets['fluent_crm'] = [
-            'title'   => __('FluentCRM Profile', 'fluent-crm'),
+            'title'   => __('TitleKit CRM Profile', 'fluent-crm'),
             'content' => $profileHtml
         ];
         return $widgets;

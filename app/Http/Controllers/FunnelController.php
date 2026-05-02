@@ -949,7 +949,7 @@ class FunnelController extends Controller
 
         if (!defined('FLUENTCAMPAIGN_DIR_FILE')) {
             return $this->sendError([
-                'message' => __('This feature require latest version of FluentCRM Pro version', 'fluent-crm')
+                'message' => __('This feature require latest version of TitleKit CRM Pro version', 'fluent-crm')
             ]);
         }
 
@@ -957,7 +957,7 @@ class FunnelController extends Controller
 
         if (!method_exists($cleanup, 'syncAutomationSteps')) {
             return $this->sendError([
-                'message' => __('This feature require latest version of FluentCRM Pro version', 'fluent-crm')
+                'message' => __('This feature require latest version of TitleKit CRM Pro version', 'fluent-crm')
             ]);
         }
 

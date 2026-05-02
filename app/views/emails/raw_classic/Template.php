@@ -33,9 +33,6 @@
                 <td align="left" valign="top" id="footer_section" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;border-top: 0;">
                     <div style="margin-top: 80px; text-align: left;">
                         <?php echo $footer_text; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-                        <?php if (!defined('FLUENTCAMPAIGN')): ?>
-                            <p><?php esc_html_e('Powered By', 'fluent-crm'); ?> <a href="http://fluentcrm.com/?utm_source=wp&utm_medium=wp_mail&utm_campaign=footer"><?php esc_html_e('FluentCRM', 'fluent-crm'); ?></a></p>
-                        <?php endif; ?>
                     </div>
                 </td>
             </tr>

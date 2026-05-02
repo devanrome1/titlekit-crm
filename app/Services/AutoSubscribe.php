@@ -26,12 +26,12 @@ class AutoSubscribe
     {
         return [
             'title'     => __('User Signup Optin Settings', 'fluent-crm'),
-            'sub_title' => __('Automatically add your new user signups as subscriber in FluentCRM', 'fluent-crm'),
+            'sub_title' => __('Automatically add your new user signups as subscriber in TitleKit CRM', 'fluent-crm'),
             'fields'    => [
                 'status'       => [
                     'type'           => 'inline-checkbox',
                     'label'          => '',
-                    'checkbox_label' => __('Enable Create new contacts in FluentCRM when users register in WordPress', 'fluent-crm'),
+                    'checkbox_label' => __('Enable Create new contacts in TitleKit CRM when users register in WordPress', 'fluent-crm'),
                     'true_label'     => 'yes',
                     'false_label'    => 'no'
                 ],
@@ -104,14 +104,14 @@ class AutoSubscribe
     {
         return [
             'title'     => __('Comment Form Subscription Settings', 'fluent-crm'),
-            'sub_title' => __('Automatically add your site commenter as subscriber in FluentCRM', 'fluent-crm'),
+            'sub_title' => __('Automatically add your site commenter as subscriber in TitleKit CRM', 'fluent-crm'),
             'fields'    => [
                 'status'         => [
                     'type'           => 'inline-checkbox',
                     'label'          => '',
                     'true_label'     => 'yes',
                     'false_label'    => 'no',
-                    'checkbox_label' => __('Enable Create new contacts in FluentCRM when a visitor add a comment in your comment form', 'fluent-crm')
+                    'checkbox_label' => __('Enable Create new contacts in TitleKit CRM when a visitor add a comment in your comment form', 'fluent-crm')
                 ],
                 'checkbox_label' => [
                     'label'       => __('Checkbox Label for Comment Form', 'fluent-crm'),
@@ -209,21 +209,21 @@ class AutoSubscribe
     {
         return [
             'title'     => __('Auto Sync User Data and Contact Data', 'fluent-crm'),
-            'sub_title' => __('Automatically Sync your WP User Data and Fluent CRM Contact Data', 'fluent-crm'),
+            'sub_title' => __('Automatically Sync your WP User Data and TitleKit CRM Contact Data', 'fluent-crm'),
             'fields'    => [
                 'status'                        => [
                     'type'           => 'inline-checkbox',
                     'label'          => '',
                     'true_label'     => 'yes',
                     'false_label'    => 'no',
-                    'checkbox_label' => __('Enable Sync between WP User Data and Fluent CRM Contact Data', 'fluent-crm')
+                    'checkbox_label' => __('Enable Sync between WP User Data and TitleKit CRM Contact Data', 'fluent-crm')
                 ],
                 'delete_contact_on_user_delete' => [
                     'type'           => 'inline-checkbox',
                     'label'          => '',
                     'true_label'     => 'yes',
                     'false_label'    => 'no',
-                    'checkbox_label' => __('Delete FluentCRM contact on WP User delete', 'fluent-crm')
+                    'checkbox_label' => __('Delete TitleKit CRM contact on WP User delete', 'fluent-crm')
                 ]
             ]
         ];

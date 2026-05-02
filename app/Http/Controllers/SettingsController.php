@@ -192,7 +192,7 @@ class SettingsController extends Controller
                 ],
                 'tag_based_redirect'       => [
                     'type'           => 'inline-checkbox',
-                    'checkbox_label' => (defined('FLUENTCAMPAIGN')) ? __('Enable Tag based double optin redirect', 'fluent-crm') : 'Enable Tag based double optin redirect (Require FluentCRM Pro)',
+                    'checkbox_label' => (defined('FLUENTCAMPAIGN')) ? __('Enable Tag based double optin redirect', 'fluent-crm') : 'Enable Tag based double optin redirect (Require TitleKit CRM Pro)',
                     'true_label'     => 'yes',
                     'false_label'    => 'no',
                     'disabled'       => !defined('FLUENTCAMPAIGN')
@@ -332,7 +332,7 @@ class SettingsController extends Controller
         }
 
         return [
-            'message' => __('All FluentCRM Database Tables have been resetted', 'fluent-crm'),
+            'message' => __('All TitleKit CRM Database Tables have been resetted', 'fluent-crm'),
             'tables'  => $tables
         ];
     }
@@ -349,72 +349,72 @@ class SettingsController extends Controller
             'ses'          => [
                 'label'       => __('Amazon SES', 'fluent-crm'),
                 'webhook_url' => site_url('index.php?fluentcrm=1&route=bounce_handler&provider=ses&verify_key=' . $securityCode),
-                'doc_url'     => 'https://fluentcrm.com/docs/bounce-handler-with-amazon-ses/',
+                'doc_url'     => '',
                 'input_title' => __('Amazon SES Bounce Handler URL', 'fluent-crm'),
                 'input_info'  => __('Please use this bounce handler url in your Amazon SES + SNS settings', 'fluent-crm')
             ],
             'mailgun'      => [
                 'label'       => __('Mailgun', 'fluent-crm'),
                 'webhook_url' => get_rest_url(null, 'fluent-crm/v2/public/bounce_handler/mailgun/handle/' . $securityCode),
-                'doc_url'     => 'https://fluentcrm.com/docs/bounce-handling-with-mailgun/',
+                'doc_url'     => '',
                 'input_title' => __('Mailgun Bounce Handler Webhook URL', 'fluent-crm'),
-                'input_info'  => __('Please paste this URL into your Mailgun\'s Webhook settings to enable Bounce Handling with FluentCRM', 'fluent-crm')
+                'input_info'  => __('Please paste this URL into your Mailgun\'s Webhook settings to enable Bounce Handling with TitleKit CRM', 'fluent-crm')
             ],
             'pepipost'     => [
                 'label'       => __('PepiPost', 'fluent-crm'),
                 'webhook_url' => get_rest_url(null, 'fluent-crm/v2/public/bounce_handler/pepipost/handle/' . $securityCode),
-                'doc_url'     => 'https://fluentcrm.com/docs/bounce-handling-with-pepipost/',
+                'doc_url'     => '',
                 'input_title' => __('PepiPost Bounce Handler Webhook URL', 'fluent-crm'),
-                'input_info'  => __('Please paste this URL into your PepiPost\'s Webhook settings to enable Bounce Handling with FluentCRM', 'fluent-crm')
+                'input_info'  => __('Please paste this URL into your PepiPost\'s Webhook settings to enable Bounce Handling with TitleKit CRM', 'fluent-crm')
             ],
             'postmark'     => [
                 'label'       => __('PostMark', 'fluent-crm'),
                 'webhook_url' => get_rest_url(null, 'fluent-crm/v2/public/bounce_handler/postmark/handle/' . $securityCode),
-                'doc_url'     => 'https://fluentcrm.com/docs/bounce-handling-with-postmark/',
+                'doc_url'     => '',
                 'input_title' => __('PostMark Bounce Handler Webhook URL', 'fluent-crm'),
-                'input_info'  => __('Please paste this URL into your PostMark\'s Webhook settings to enable Bounce Handling with FluentCRM', 'fluent-crm')
+                'input_info'  => __('Please paste this URL into your PostMark\'s Webhook settings to enable Bounce Handling with TitleKit CRM', 'fluent-crm')
             ],
             'sendgrid'     => [
                 'label'       => __('SendGrid', 'fluent-crm'),
                 'webhook_url' => get_rest_url(null, 'fluent-crm/v2/public/bounce_handler/sendgrid/handle/' . $securityCode),
-                'doc_url'     => 'https://fluentcrm.com/docs/bounce-handling-with-sendgrid/',
+                'doc_url'     => '',
                 'input_title' => __('SendGrid Bounce Handler Webhook URL', 'fluent-crm'),
-                'input_info'  => __('Please paste this URL into your SendGrid\'s Webhook settings to enable Bounce Handling with FluentCRM', 'fluent-crm')
+                'input_info'  => __('Please paste this URL into your SendGrid\'s Webhook settings to enable Bounce Handling with TitleKit CRM', 'fluent-crm')
             ],
             'sparkpost'    => [
                 'label'       => __('SparkPost', 'fluent-crm'),
                 'webhook_url' => get_rest_url(null, 'fluent-crm/v2/public/bounce_handler/sparkpost/handle/' . $securityCode),
-                'doc_url'     => 'https://fluentcrm.com/docs/bounce-handling-with-sparkpost/',
+                'doc_url'     => '',
                 'input_title' => __('SparkPost Bounce Handler Webhook URL', 'fluent-crm'),
-                'input_info'  => __('Please paste this URL into your SparkPost\'s Webhook settings to enable Bounce Handling with FluentCRM', 'fluent-crm')
+                'input_info'  => __('Please paste this URL into your SparkPost\'s Webhook settings to enable Bounce Handling with TitleKit CRM', 'fluent-crm')
             ],
             'elasticemail' => [
                 'label'       => __('Elastic Email', 'fluent-crm'),
                 'webhook_url' => get_rest_url(null, 'fluent-crm/v2/public/bounce_handler/elasticemail/handle/' . $securityCode),
-                'doc_url'     => 'https://fluentcrm.com/docs/bounce-handling-with-elastic-email/',
+                'doc_url'     => '',
                 'input_title' => __('Elastic Email Bounce Handler Webhook URL', 'fluent-crm'),
-                'input_info'  => __('Please paste this URL into your Elastic Email\'s Webhook settings to enable Bounce Handling with FluentCRM', 'fluent-crm')
+                'input_info'  => __('Please paste this URL into your Elastic Email\'s Webhook settings to enable Bounce Handling with TitleKit CRM', 'fluent-crm')
             ],
             'postalserver' => [
                 'label'       => __('Postal Server', 'fluent-crm'),
                 'webhook_url' => get_rest_url(null, 'fluent-crm/v2/public/bounce_handler/postalserver/handle/' . $securityCode),
-                'doc_url'     => 'https://fluentcrm.com/docs/bounce-handling-with-postal-server/',
+                'doc_url'     => '',
                 'input_title' => __('Postal Server Bounce Handler Webhook URL', 'fluent-crm'),
-                'input_info'  => __('Please paste this URL into your Postal Server\'s Webhook settings to enable Bounce Handling with FluentCRM. Please select only MessageBounced & MessageDeliveryFailed event', 'fluent-crm')
+                'input_info'  => __('Please paste this URL into your Postal Server\'s Webhook settings to enable Bounce Handling with TitleKit CRM. Please select only MessageBounced & MessageDeliveryFailed event', 'fluent-crm')
             ],
             'smtp2go' => [
                 'label' => 'SMTP2Go',
                 'webhook_url' => get_rest_url(null, 'fluent-crm/v2/public/bounce_handler/smtp2go/handle/' . $securityCode),
-                'doc_url' => 'https://fluentcrm.com/docs/bounce-handling-with-smtp2go/',
+                'doc_url' => '',
                 'input_title' => 'SMTP2Go Bounce Handler Webhook URL',
-                'input_info' => 'Please paste this URL into your SMTP2Go\'s Webhook settings to enable Bounce Handling with FluentCRM'
+                'input_info' => 'Please paste this URL into your SMTP2Go\'s Webhook settings to enable Bounce Handling with TitleKit CRM'
             ],
             'brevo' => [
                 'label'       => __('Brevo (ex Sendinblue)', 'fluent-crm'),
                 'webhook_url' => get_rest_url(null, 'fluent-crm/v2/public/bounce_handler/brevo/handle/' . $securityCode),
-                'doc_url'     => 'https://fluentcrm.com/docs/bounce-handling-with-brevo/',
+                'doc_url'     => '',
                 'input_title' => __('Brevo Bounce Handler Webhook URL', 'fluent-crm'),
-                'input_info'  => __('Please paste this URL into your Brevo\'s Webhook settings to enable Bounce Handling with FluentCRM', 'fluent-crm')
+                'input_info'  => __('Please paste this URL into your Brevo\'s Webhook settings to enable Bounce Handling with TitleKit CRM', 'fluent-crm')
             ],
         ];
 
@@ -736,7 +736,7 @@ class SettingsController extends Controller
 
         if (!get_user_meta($data['user_id'], '_fcrm_has_role', true)) {
             return $this->sendError([
-                'message' => __('Sorry, the provided user does not have FluentCRM access', 'fluent-crm')
+                'message' => __('Sorry, the provided user does not have TitleKit CRM access', 'fluent-crm')
             ]);
         }
 
@@ -856,7 +856,7 @@ class SettingsController extends Controller
         // check if the provided user has FluentCRM Access
         if (!get_user_meta($data['api_user_id'], '_fcrm_has_role', true)) {
             return $this->sendError([
-                'message' => __('Sorry, the provided user does not have FluentCRM access', 'fluent-crm')
+                'message' => __('Sorry, the provided user does not have TitleKit CRM access', 'fluent-crm')
             ]);
         }
 
@@ -870,7 +870,7 @@ class SettingsController extends Controller
 
         if (is_wp_error($user)) {
             return $this->sendError([
-                'message' => __('Sorry, the provided user does not have FluentCRM access', 'fluent-crm')
+                'message' => __('Sorry, the provided user does not have TitleKit CRM access', 'fluent-crm')
             ]);
         }
 

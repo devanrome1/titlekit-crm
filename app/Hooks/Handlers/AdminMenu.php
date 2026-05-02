@@ -57,9 +57,9 @@ class AdminMenu
             $isAdmin = true;
         }
 
-        $title = __('FluentCRM', 'fluent-crm');
+        $title = __('TitleKit CRM', 'fluent-crm');
         if (defined('FLUENTCAMPAIGN')) {
-            $title = __('FluentCRM Pro', 'fluent-crm');
+            $title = __('TitleKit CRM Pro', 'fluent-crm');
         }
         add_menu_page(
             $title,
@@ -268,13 +268,12 @@ class AdminMenu
     public function changeFooter()
     {
         add_filter('admin_footer_text', function ($content) {
-            $url = 'https://fluentcrm.com';
             $extraHtml = '';
             if (!defined('DISABLE_WP_CRON')) {
-                $extraHtml = ' ' . sprintf(__('Server-Side Cron Job is not enabled %1sView Documentation%2s.', 'fluent-crm'), '<a style="font-weight: 500;" target="_blank" rel="noopener" href="https://fluentcrm.com/docs/fluentcrm-cron-job-basics-and-checklist/">', '</a>');
+                $extraHtml = ' ' . __('Server-Side Cron Job is not enabled.', 'fluent-crm');
             }
 
-            return sprintf(wp_kses(__('Thank you for using <a href="%s">FluentCRM</a>.', 'fluent-crm'), array('a' => array('href' => array()))), esc_url($url)) . '<span title="based on your WP timezone settings" style="margin-left: 10px;" data-timestamp="' . current_time('timestamp') . '" id="fc_server_timestamp"></span>. ' . $extraHtml;
+            return __('Thank you for using TitleKit CRM.', 'fluent-crm') . '<span title="based on your WP timezone settings" style="margin-left: 10px;" data-timestamp="' . current_time('timestamp') . '" id="fc_server_timestamp"></span>. ' . $extraHtml;
         });
 
         add_filter('update_footer', function ($text) {
@@ -388,7 +387,7 @@ class AdminMenu
                     'key'         => 'all_emails',
                     'label'       => __('All Emails', 'fluent-crm'),
                     'permalink'   => $urlBase . 'email/all-emails',
-                    'description' => __('Find all the emails that are being sent or scheduled by FluentCRM', 'fluent-crm')
+                    'description' => __('Find all the emails that are being sent or scheduled by TitleKit CRM', 'fluent-crm')
                 ]
             ];
 
@@ -437,14 +436,6 @@ class AdminMenu
             ];
         }
 
-        if (!defined('FLUENTCAMPAIGN')) {
-            $menuItems[] = [
-                'key'       => 'get_pro',
-                'label'     => __('Get Pro', 'fluent-crm'),
-                'permalink' => 'https://fluentcrm.com?utm_source=dashboard&utm_medium=plugin&utm_campaign=pro&utm_id=wp',
-                'class'     => 'pro_link'
-            ];
-        }
 
         /**
          * Filter the menu items for FluentCRM.
@@ -631,7 +622,7 @@ class AdminMenu
             'contact_prefixes'                    => Helper::getContactPrefixes(),
             'contact_custom_fields'               => fluentcrm_get_custom_contact_fields(),
             'server_time'                         => current_time('mysql'),
-            'crm_pro_url'                         => 'https://fluentcrm.com/?utm_source=plugin&utm_medium=admin&utm_campaign=promo',
+            'crm_pro_url'                         => '',
             /**
              * Determine if request verification is required in FluentCRM.
              *

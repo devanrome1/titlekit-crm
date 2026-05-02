@@ -24,7 +24,7 @@ class Bootstrap extends IntegrationManagerController
     {
         parent::__construct(
             null,
-            __('FluentCRM', 'fluent-crm'),
+            __('TitleKit CRM', 'fluent-crm'),
             'fluentcrm',
             '_fluentform_fluentcrm_settings',
             'fluentcrm_feeds',
@@ -33,7 +33,7 @@ class Bootstrap extends IntegrationManagerController
 
         $this->logo = FLUENTCRM_PLUGIN_URL . 'assets/images/fluentcrm-logo.svg';
 
-        $this->description = __('Connect FluentCRM with WP Fluent Forms and subscribe a contact when a form is submitted.', 'fluent-crm');
+        $this->description = __('Connect TitleKit CRM with WP Fluent Forms and subscribe a contact when a form is submitted.', 'fluent-crm');
 
         $this->registerAdminHooks();
 
@@ -51,8 +51,8 @@ class Bootstrap extends IntegrationManagerController
             'is_active'             => $this->isConfigured(),
             'configure_title'       => __('Configuration required!', 'fluent-crm'),
             'global_configure_url'  => '#',
-            'configure_message'     => __('FluentCRM is not configured yet! Please configure your FluentCRM api first', 'fluent-crm'),
-            'configure_button_text' => __('Set FluentCRM', 'fluent-crm')
+            'configure_message'     => __('TitleKit CRM is not configured yet! Please configure your TitleKit CRM api first', 'fluent-crm'),
+            'configure_button_text' => __('Set TitleKit CRM', 'fluent-crm')
         ];
         return $integrations;
     }
@@ -121,9 +121,9 @@ class Bootstrap extends IntegrationManagerController
             ],
             [
                 'key'         => 'list_id',
-                'label'       => __('FluentCRM List', 'fluent-crm'),
-                'placeholder' => __('Select FluentCRM List', 'fluent-crm'),
-                'tips'        => __('Select the FluentCRM List you would like to add your contacts to.', 'fluent-crm'),
+                'label'       => __('TitleKit CRM List', 'fluent-crm'),
+                'placeholder' => __('Select TitleKit CRM List', 'fluent-crm'),
+                'tips'        => __('Select the TitleKit CRM List you would like to add your contacts to.', 'fluent-crm'),
                 'component'   => 'select',
                 'required'    => false,
                 'options'     => $this->getLists(),
@@ -132,9 +132,9 @@ class Bootstrap extends IntegrationManagerController
                 'key'                => 'CustomFields',
                 'require_list'       => false,
                 'label'              => __('Primary Fields', 'fluent-crm'),
-                'tips'               => __('Associate your FluentCRM merge tags to the appropriate Fluent Form fields by selecting the appropriate form field from the list.', 'fluent-crm'),
+                'tips'               => __('Associate your TitleKit CRM merge tags to the appropriate Fluent Form fields by selecting the appropriate form field from the list.', 'fluent-crm'),
                 'component'          => 'map_fields',
-                'field_label_remote' => __('FluentCRM Field', 'fluent-crm'),
+                'field_label_remote' => __('TitleKit CRM Field', 'fluent-crm'),
                 'field_label_local'  => __('Form Field', 'fluent-crm'),
                 'primary_fileds'     => [
                     [
@@ -162,9 +162,9 @@ class Bootstrap extends IntegrationManagerController
                 'key'                => 'other_fields',
                 'require_list'       => false,
                 'label'              => __('Other Fields', 'fluent-crm'),
-                'tips'               => __('Select which Fluent Form fields pair with their<br /> respective FlunentCRM fields.', 'fluent-crm'),
+                'tips'               => __('Select which Fluent Form fields pair with their<br /> respective TitleKit CRM fields.', 'fluent-crm'),
                 'component'          => 'dropdown_many_fields',
-                'field_label_remote' => __('FluentCRM Field', 'fluent-crm'),
+                'field_label_remote' => __('TitleKit CRM Field', 'fluent-crm'),
                 'field_label_local'  => __('Form Field', 'fluent-crm'),
                 'options'            => $fieldOptions
             ],
@@ -189,7 +189,7 @@ class Bootstrap extends IntegrationManagerController
             [
                 'key'            => 'skip_if_exists',
                 'require_list'   => false,
-                'checkbox_label' => __('Skip if contact already exist in FluentCRM', 'fluent-crm'),
+                'checkbox_label' => __('Skip if contact already exist in TitleKit CRM', 'fluent-crm'),
                 'component'      => 'checkbox-single'
             ],
             [
@@ -215,7 +215,7 @@ class Bootstrap extends IntegrationManagerController
                 'require_list' => false,
                 'key'          => 'conditionals',
                 'label'        => __('Conditional Logics', 'fluent-crm'),
-                'tips'         => __('Allow FluentCRM integration conditionally based on your submission values', 'fluent-crm'),
+                'tips'         => __('Allow TitleKit CRM integration conditionally based on your submission values', 'fluent-crm'),
                 'component'    => 'conditional_block'
             ]
         ];
@@ -351,7 +351,7 @@ class Bootstrap extends IntegrationManagerController
             $this->addLog(
                 $feed['settings']['name'],
                 'failed',
-                __('FluentCRM API called skipped because no valid email available', 'fluent-crm'),
+                __('TitleKit CRM API called skipped because no valid email available', 'fluent-crm'),
                 $form->id,
                 $entry->id
             );
@@ -454,7 +454,7 @@ class Bootstrap extends IntegrationManagerController
             $this->addLog(
                 $feed['settings']['name'],
                 'success',
-                __('Contact has been created in FluentCRM. Contact ID: ', 'fluent-crm') . $subscriber->id,
+                __('Contact has been created in TitleKit CRM. Contact ID: ', 'fluent-crm') . $subscriber->id,
                 $form->id,
                 $entry->id
             );
@@ -502,7 +502,7 @@ class Bootstrap extends IntegrationManagerController
             $this->addLog(
                 $feed['settings']['name'],
                 'success',
-                __('Contact has been updated in FluentCRM. Contact ID: ', 'fluent-crm') . $subscriber->id,
+                __('Contact has been updated in TitleKit CRM. Contact ID: ', 'fluent-crm') . $subscriber->id,
                 $form->id,
                 $entry->id
             );
